@@ -1,14 +1,14 @@
-exports.lambda_handler = function(event, context, callback) {
+/*exports.lambda_handler = function(event, context, callback) {
    console.log("value1 = " + event.key1);
    console.log("value2 = " + event.key2);  
    callback(null, "some success message");
    // or 
    // callback("some error type"); 
-}
+}*/
 
-//var Canvas = require('canvas');
+var Canvas = require('canvas');
 
-/*exports.lambda_handler = function(event, context) {
+exports.lambda_handler = function(event, context) {
 
     var canvas = new Canvas();
     canvas.width = 100;
@@ -26,9 +26,9 @@ exports.lambda_handler = function(event, context, callback) {
 
     var image = canvas.toDataURL();
     console.log(image);
-    context.succeed('Done! '+image);
+    context.succeed(image);
     return image;
-};*/
+};
 
 /*exports.lambda_handler = function(event, context) {
 
