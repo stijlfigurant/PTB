@@ -9,7 +9,7 @@ fs.readFile('perlin.js', 'utf8', function (err,data) {
   var b64 = new Buffer(data).toString('base64');
   console.log(b64)
 
-  /*request.post('https://pcnxwf4iag.execute-api.eu-central-1.amazonaws.com/canvas',
+  request.post('https://ph0c04837l.execute-api.eu-central-1.amazonaws.com/demo',
       { json: { base64: b64 } },
       function (error, response, body) {
           if (!error && response.statusCode == 200) {
@@ -22,6 +22,6 @@ fs.readFile('perlin.js', 'utf8', function (err,data) {
               });
           }
       }
-  );*/
+  );
 });
 

@@ -330,15 +330,15 @@ if (typeof module === "object" && module && typeof module.exports === "object") 
   global.Noise = Noise;
 }
 
-var numAgents = 1000;
-var iterations = 1000;
+var numAgents = 100;
+var iterations = 100;
 var stepSize = 4;
 var noiseScale = 100;
 var noiseStrength = 3;
 
 var canvas = new Canvas();
-canvas.width = 600;
-canvas.height = 1800;
+canvas.width = 100;
+canvas.height = 100;
 
 var noise = new Noise(1337);
 var ctx = canvas.getContext('2d');
