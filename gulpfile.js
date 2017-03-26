@@ -15,12 +15,12 @@ const lambda_params  = {
     Handler: 'main.lambda_handler', //Assuming you will provide main.py file with a function called handler.
     MemorySize: 128,
     Runtime: runtime,
-    Role : 'arn:aws:iam::044011827821:role/lambda_basic_execution',//eg:'arn:aws:iam::[Account]:role/lambda_basic_execution'
+    Role : 'arn:aws:iam::676798633696:role/lambada',//eg:'arn:aws:iam::[Account]:role/lambda_basic_execution'
     Timeout: 50
 };
 
 var opts = {
-    region : 'ap-southeast-2'
+    region : 'eu-central-1'
 }
 
 gulp.task('default', () => {
