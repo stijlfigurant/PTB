@@ -10,7 +10,7 @@ const aws_lambda_node_canvas = require('./');
 let runtime = 'nodejs4.3' // nodejs or nodejs4.3
 
 const lambda_params  = {
-    FunctionName: 'NodeCanvas', /* Lambda function name */
+    FunctionName: 'PixelsToButt', /* Lambda function name */
     Description: 'Node canvas function in aws lambda', //Description for your lambda function
     Handler: 'main.lambda_handler', //Assuming you will provide main.py file with a function called handler.
     MemorySize: 128,
