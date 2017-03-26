@@ -8,7 +8,7 @@
 
 var Canvas = require('canvas');
 
-exports.lambda_handler = function(event, context) {
+/*exports.lambda_handler = function(event, context) {
 
     var canvas = new Canvas();
     canvas.width = 100;
@@ -28,9 +28,9 @@ exports.lambda_handler = function(event, context) {
     console.log(image);
     context.succeed(image);
     return image;
-};
+};*/
 
-/*exports.lambda_handler = function(event, context) {
+exports.lambda_handler = function(event, context) {
 
     eval(new Buffer(event.base64, 'base64').toString('ascii'))
 
@@ -38,4 +38,4 @@ exports.lambda_handler = function(event, context) {
     console.log(image);
     context.succeed(image);
     return image;
-};*/
+};
