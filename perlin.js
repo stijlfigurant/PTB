@@ -330,15 +330,15 @@ if (typeof module === "object" && module && typeof module.exports === "object") 
   global.Noise = Noise;
 }
 
-var numAgents = 100;
-var iterations = 100;
-var stepSize = 4;
-var noiseScale = 100;
+var numAgents = 1800;
+var iterations = 700;
+var stepSize = 12;
+var noiseScale = 400;
 var noiseStrength = 3;
 
 var canvas = new Canvas();
-canvas.width = 100;
-canvas.height = 100;
+canvas.width = 1200;
+canvas.height = 1200;
 
 var noise = new Noise(1337);
 var ctx = canvas.getContext('2d');
@@ -374,7 +374,7 @@ function Agent(cw, ch) {
   this.noiseScale = noiseScale;
   this.noiseStrength = noiseStrength;
   
-  this.c = 'rgb(' + this.r + ',' + this.g + ',' + this.b + ')';
+  this.c = 'rgba(' + this.r + ',' + this.g + ',' + this.b + ', 0.15)';
   
   for(var ii=0; ii< this.numIterations; ii++){
     this.update();  
